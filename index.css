@@ -13,17 +13,21 @@
     height: 20em;
     font-style: italic;
     border-radius: 50em;
+    animation-name: background;
+    animation-duration: 5ms;
+    animation-iteration-count: infinite;
 }
 
 .TextSheet {
     font-size: 100px;
-    animation-name: typing;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation: 
+    typing 3s steps(30, end);
+    overflow: hidden;
+    
 }
 
 .ButtonBar {
-    background-color: green;
+    background-color: black;
     text-align: center;
     position: relative;
     height: 40em;
@@ -48,7 +52,13 @@
     font-size: 30px;
   }
 
-  @keyframes typing {
-    from {color: blue;}
-    to {color: yellow;}
+  @keyframes background {
+    from {background-color: blue;}
+    to {background-color: yellow;}
   }
+
+  @keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+  }
+ 
