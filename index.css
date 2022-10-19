@@ -15,6 +15,13 @@
     border-radius: 50em;
 }
 
+.TextSheet {
+    font-size: 100px;
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 .ButtonBar {
     background-color: green;
     text-align: center;
@@ -39,4 +46,9 @@
     text-align: center;
     display: inline-block;
     font-size: 30px;
+  }
+
+  @keyframes typing {
+    from {color: blue;}
+    to {color: yellow;}
   }
