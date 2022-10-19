@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+</head>
+<body>
+    <div class="Body">
+        <div class="TextBar">
+            <h1>Hi! This is my Clicker game, welcome to it!</h1>
+        </div>
+        <div class="ButtonBar">
+            <button class="Play" onclick="count()" id="Play">Click</button>
+            <p class = "Number" id="click">0</p>
+            <button class="Reset" onclick="reset()" id="Reset">Reset</button>
+            <script>
+                var counter = 0;
+                function count() {
+                    counter += 1;
+                    document.getElementById("click").innerHTML = counter;
+                }
+
+                function reset() {
+                    counter = 0;
+                    document.getElementById("click").innerHTML = counter;
+                }
+            </script>
+            <h1></h1>
+        </div>
+    </div>
+</body>
+</html>
