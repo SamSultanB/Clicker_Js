@@ -14,7 +14,7 @@
     font-style: italic;
     border-radius: 50em;
     animation-name: background;
-    animation-duration: 5ms;
+    animation-duration: 0.8ms;
     animation-iteration-count: infinite;
 }
 
@@ -32,6 +32,7 @@
     position: relative;
     height: 40em;
     border-radius: 5em;
+    padding: 50px;
 }
 
 .Number {
